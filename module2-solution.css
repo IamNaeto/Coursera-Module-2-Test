@@ -1,0 +1,57 @@
+/*Desktop view*/
+.container {
+    display:flex;
+}
+.hold {
+    display:flex;
+}
+.beef, .chicken, .sushi {
+    border: 2px solid black;
+    margin: 10px;
+    background-color: gray;
+}
+h2 {
+    text-align: center;
+}
+button {
+    float: right;
+    width: 90px;
+    height: 20px;
+}
+.chicken button {
+    background-color: palevioletred;
+    border-right: none;
+    border-top: none;
+    color: black;
+}
+.beef button {
+    background-color: red;
+    border-right: none;
+    border-top: none;
+    color: white;
+}
+.sushi button {
+    background-color: yellow;
+    border-right: none;
+    border-top: none;
+    color: black;
+}
+/*Tablet view*/
+@media screen and (max-width:991px) {
+    .container
+    {
+        display: grid;
+    }
+    .hold {
+        display: flex;
+    }
+}
+/*Mobile view*/
+@media screen and (max-width:767px) {
+    .container {
+        display: grid;
+    }
+    .hold {
+        display: grid;
+    }
+}
